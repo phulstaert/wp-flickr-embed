@@ -317,6 +317,8 @@ function WpFlickrEmbed() {
         flickr_url = 'http://farm'+photo.farm+'.static.flickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg';
       } else if (0 == setting_photo_link) {
         flickr_url = 'http://www.flickr.com/photos/'+owner+'/'+photo.id+'/';
+      } else if (3 == setting_photo_link) {
+        flickr_url = 'http://www.flickr.com/sets/'+photoset.id+'/';	  
       }
 
       self.photos[photo.id] = new Object();
